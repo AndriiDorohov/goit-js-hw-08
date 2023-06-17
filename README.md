@@ -1,48 +1,46 @@
-**Читать на других языках: [Русский](README.md), [Українська](README.ua.md).**
+# Admission criteria
 
-# Критерии приема
+- The repository `goit-js-hw-08-gallery' has been created.
+- When submitting homework, there are two links: to the source files and a working
+page on GitHub pages.
+- When visiting the work page (GitHub pages) of the task, there are no errors and
+warnings in the console.
+- The names of variables and functions are clear, descriptive.
+- The code is formatted using Prettier.
 
-- Создан репозиторий `goit-js-hw-08-gallery`.
-- При сдаче домашней работы есть две ссылки: на исходные файлы и рабочую
-  страницу на GitHub pages.
-- При посещении рабочей страницы (GitHub pages) задания, в консоли нету ошибок и
-  предупреждений.
-- Имена переменных и функций понятные, описательные.
-- Код отформатирован с помощью Prettier.
+## Task
 
-## Задание
+Create a gallery with the ability to click on its elements and view a full-size
+image in a modal window. Look at the preview of the result
+[by link](https://take.ms/ZvBD0E ).
 
-Создай галерею с возможностью клика по ее элементам и просмотра полноразмерного
-изображения в модальном окне. Превью результата посмотри
-[по ссылке](https://take.ms/ZvBD0E).
+![Preview](preview.jpg )
 
-![Превью](preview.jpg)
+Break the task into several subtasks:
 
-Разбей задание на несколько подзадач:
-
-- Создание и рендер разметки по массиву данных и предоставленному шаблону.
-- Реализация делегирования на галерее `ul.js-gallery` и получение `url` большого
-  изображения.
-- Открытие модального окна по клику на элементе галереи.
-- Подмена значения атрибута `src` элемента `img.lightbox__image`.
-- Закрытие модального окна по клику на кнопку
+- Creation and rendering of markup based on the data array and the provided template.
+- Implementation of delegation on the `ul.js-gallery` gallery and getting the `url' of a large
+  images.
+- Opening a modal window by clicking on a gallery element.
+- Substitution of the value of the `src` attribute of the `img.lightbox__image` element.
+- Closing the modal window by clicking on the button
   `button[data-action="close-lightbox"]`.
-- Очистка значения атрибута `src` элемента `img.lightbox__image`. Это необходимо
-  для того, чтобы при следующем открытии модального окна, пока грузится
-  изображение, мы не видели предыдущее.
+- Clearing the value of the `src` attribute of the `img.lightbox__image` element. This is necessary
+  in order for the next time the modal window is opened, while loading
+  the image, we didn't see the previous one.
 
-## Стартовые файлы
+## Start files
 
-- В папке [src](./src) ты найдешь стартовые файлы проекта с базовой разметкой и
-  готовыми стилями.
-- В файле [gallery-items.js](./src/gallery-items.js) есть массив объектов
-  содержащих информацию о изображениях: маленькое изображение, оригинальное и
-  описание.
+- In the [src](./src) folder you will find the project's starter files with basic markup and
+ready-made styles.
+- In the file [gallery-items.js ](./src/gallery-items.js) there is an array of objects
+containing information about images: a small image, an original and
+a description.
 
-## Разметка элемента галереи
+## Markup of the gallery element
 
-Ссылка на оригинальное изображение должна храниться в data-атрибуте `source` на
-элементе `img`, и указываться в `href` ссылки (это необходимо для доступности).
+The link to the original image must be stored in the `source` data attribute on
+the `img` element, and specified in the `href` of the link (this is necessary for accessibility).
 
 ```html
 <li class="gallery__item">
@@ -60,12 +58,12 @@
 </li>
 ```
 
-## Дополнительно
+## Additional
 
-Следующий функционал не обязателен при сдаче задания, но будет хорошей практикой
-по работе с событиями.
+The following functionality is not required when submitting a task, but it will be a good practice
+to work with events.
 
-- Закрытие модального окна по клику на `div.lightbox__overlay`.
-- Закрытие модального окна по нажатию клавиши `ESC`.
-- Пролистывание изображений галереи в открытом модальном окне клавишами "влево"
-  и "вправо".
+- Closing the modal window by clicking on `div.lightbox__overlay'.
+- Closing the modal window by pressing the `ESC` key.
+- Scrolling through the gallery images in an open modal window with the "left"
+and "right" keys.
